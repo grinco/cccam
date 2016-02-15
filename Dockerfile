@@ -13,7 +13,7 @@ COPY /etc/ /opt/cccam/etc/
 RUN cd /opt/cccam/etc && for i in *; do ln -fs /opt/cccam/etc/$i /etc/$i; done
 
 # copy cccam binaries
-COPY /bin/CCccam* /bin/
+COPY /bin/CC* /bin/
 RUN chmod a+x /bin/CCcam*
 
 # link the keys into the USR directory
